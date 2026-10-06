@@ -1,0 +1,6 @@
+{
+  "name": "Incedo TCP Studio",
+  "description": "Telecom GIS Traffic Control Plan (TCP) designer generating municipal-ready CAD diagrams with Google Maps speed test, Street View asset detection, and MUTCD 2011 compliance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
