@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, .font-display {
+    font-family: 'Oswald', sans-serif;
+  }
+  .font-mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b121b;
+}
+::-webkit-scrollbar-thumb {
+  background: #213c56;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2d4f6e;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-tcp-sheet, #printable-tcp-sheet * {
+    visibility: visible;
+  }
+  #printable-tcp-sheet {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
